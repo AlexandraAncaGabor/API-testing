@@ -2,7 +2,7 @@
 
 ## Description
 
-Demo project for testing the JSONPlaceholder API (https://jsonplaceholder.typicode.com/).  
+Demo project for testing the JSONPlaceholder API (here)(JsonplaceholderApi_postman_collection.json)  
 This project covers **all CRUD methods** (GET, POST, PUT, DELETE) and includes both **positive** and **negative tests**.
 
 ## Endpoints Used
@@ -46,3 +46,42 @@ In the Negative folder, I tested invalid inputs and non-existent IDs that will r
   - `200 OK` → successful GET/PUT/DELETE  
   - `201 Created` → successful POST  
   - Negative tests simulate errors or non-existent IDs  
+
+
+## The Cat API
+
+## Description
+
+Demo project for testing the The CatAPI  (here)(TheCatAPI.postman_collection.json)
+
+This project shows API testing with The Cat API, including both positive and negative scenarios to check expected behavior and how errors are handled. (Project file)(JsonplaceholderApi_postman_collection.json)
+
+## Positive Tests
+
+Positive tests validate successful CRUD operations and correct HTTP status codes.
+
+This folder contains the following tests: 
+
+**-GET images by limit:** Gets a specified number of images.
+**-GET image by ID:** Gets a single image using a valid image ID.
+**-GET breeds:** Gets the list of cat breeds.
+**-GET breed by ID:** Gets information about a specific breed.
+**-POST votes:** Submits a vote for an image (requires a valid API key).
+
+Status codes for positive tests: 200 OK
+
+## Negative Tests
+
+Negative tests focus on invalid inputs, missing authentication, and unusual parameters to ensure proper error handling.
+
+This folder contains the following tests: 
+
+**-GET invalid image ID:** Checks that the API returns an error for non-existent image IDs.
+**-GET invalid breed by ID:** Checks that the API returns an error for non-existent breed IDs.
+**-GET images with invalid limit:** Tests what happens when an extremely high limit is provided. The API still returns 200 OK because it ignores unreasonable values and enforces an internal maximum. This test shows how the API handles extreme input values.
+**-POST without API key:**  Ensures the API enforces authentication when posting votes.
+
+Status codes: 
+- 400 Bad Request
+- 401 Unauthorized
+
