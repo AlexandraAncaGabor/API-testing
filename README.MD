@@ -2,7 +2,7 @@
 
 ## Description
 
-Demo project for testing the JSONPlaceholder API (here)(JsonplaceholderApi_postman_collection.json)  
+Demo project for testing the JSONPlaceholder API [here](JsonplaceholderApi_postman_collection.json)  
 This project covers **all CRUD methods** (GET, POST, PUT, DELETE) and includes both **positive** and **negative tests**.
 
 ## Endpoints Used
@@ -52,9 +52,9 @@ In the Negative folder, I tested invalid inputs and non-existent IDs that will r
 
 ## Description
 
-Demo project for testing the The CatAPI  (here)(TheCatAPI.postman_collection.json)
+Demo project for testing the The CatAPI  [here](TheCatAPI.postman_collection.json)
 
-This project shows API testing with The Cat API, including both positive and negative scenarios to check expected behavior and how errors are handled. (Project file)(JsonplaceholderApi_postman_collection.json)
+This project shows API testing with The Cat API, including both positive and negative scenarios to check expected behavior and how errors are handled. 
 
 ## Positive Tests
 
